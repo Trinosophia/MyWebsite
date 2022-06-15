@@ -9,7 +9,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:rgb(66, 73, 73);
+    background-color:rgb(103, 99, 107); 
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -46,7 +46,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color:rgb(66, 162, 240);;
+    background-color:rgb(57, 235, 205);
     margin: 5px;
     transition: all 0.3s ease; 
 }
@@ -66,7 +66,7 @@ nav{
         right: 0px;
         height: 88vh;
         top: 8vh;
-        background-color:rgb(66, 162, 240);
+        background-color:rgb(34, 41, 46);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -85,6 +85,14 @@ nav{
 
 .nav-active{
     transform: translateX(0%);
+}
+
+.nav-links .current{
+color: rgb(57, 235, 205); 
+}
+
+.nav-links a:hover{ 
+color: rgb(241, 206, 50) !important; 
 }
 
 @keyframes navLinkFade{
