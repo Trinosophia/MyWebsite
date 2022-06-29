@@ -9,9 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>About</title>
+    
+    <script>
+    function textRevealClick(aboutBtn) {
+        document.getElementById("textReveal").innerHTML = "For as long as a I can remember, I have been captivated by the mysteries of life. These mysteries include the wonders of technology, the enigma of the human mind, and the secrets of our origin. In order to better understand these mysteries, I've familiarized myself in the areas of programming, psychology, and philosophy.";
+        aboutBtn.style.display='none';
+    }
+        </script>
 </head>
-
 <body>
     <nav>
         <div class="logo">
@@ -42,12 +48,12 @@
     </nav>
     <script src="app.js"></script>
     <h1>
-    <div class="content" style = "text-align: center;">About Me</div>
-    <div class="content" style = "text-align: center;">For as long as a I can remember, I have been captivated 
-        by the mysteries of life. These mysteries include the wonders of technology, the enigma of the human 
-        mind, and the secrets of our origin. In order to better understand these mysteries, I've familiarized
-        myself in the areas of programming, psychology, and philosophy. </div>
-    <div class="img-headshot"></div>
+        <!-- <div class="content" style = "text-align: center;">About Me</div> -->
+    <div class = "button-container-div">
+    <p id="textReveal"></p>
+    <button id="aboutBtn" class = "button" role="button" onclick="textRevealClick(aboutBtn)"></button>
+</div> 
+    <!-- <div class="img-headshot"></div> -->
     </h1>
 </body>
 
