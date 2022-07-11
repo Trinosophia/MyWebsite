@@ -8,6 +8,7 @@ h1 {
     margin-top: 20px;
     padding: 30px;
     background-color:rgb(255, 255, 255);   
+    font-family: 'Ubuntu', sans-serif;
 }
 
 nav{
@@ -29,7 +30,7 @@ nav{
 
 .button1 {
   appearance: none;
-  width: 75%;
+  width: 60%;
   height: 135px;
   opacity: 100%;
   border-radius: 40em;
@@ -53,12 +54,12 @@ nav{
   -webkit-user-select: none;
   touch-action: manipulation;
   background: url(../images/cmu-logo.png);
-  background-size: cover;
+  background-size: 95% 95%;
   background-repeat: no-repeat;
 }
 
 .button1:hover {
-  background-color: rgb(223, 188, 37);
+  background-color: rgb(255, 200, 46);
   box-shadow: #683d3d 0 -6px 8px inset;
   transform: scale(1.125);
 }
@@ -76,7 +77,7 @@ nav{
 
 .button2 {
     appearance: none;
-    width: 75%;
+    width: 60%;
     height: 135px;
     opacity: 100%;
     border-radius: 40em;
@@ -100,12 +101,12 @@ nav{
     -webkit-user-select: none;
     touch-action: manipulation;
     background: url(../images/emu-logo.png);
-    background-size: 100% 100%;
+    background-size: 98% 99%;
     background-repeat: no-repeat;
   }
   
   .button2:hover {
-    background-color: rgb(25, 100, 50);
+    background-color: #046A38;
     box-shadow: #000000 0 -6px 8px inset;
     transform: scale(1.125);
   }
@@ -119,6 +120,46 @@ nav{
       font-size: 1.5rem;
       padding: .75rem 2rem;
     }
+  }
+
+  .button3 {
+    appearance: none;
+    width: 60%;
+    height: 135px;
+    opacity: 100%;
+    border-radius: 40em;
+    border: none;
+    box-shadow: #010c74 0 -6px 8px inset;;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background: url(../images/walsh-logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .button3:hover {
+    background-color: rgb(197, 197, 247);
+    box-shadow: #010c74 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  
+  .button3:active {
+    transform: scale(1.025);
   }
 
 .logo{

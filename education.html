@@ -12,9 +12,31 @@
     <title>Document</title>
 
     <script>
-        function textRevealClick(aboutBtn) {
-            document.getElementById("textReveal").innerHTML = "For as long as a I can remember, I have been captivated by the mysteries of life. These mysteries include the wonders of technology, the enigma of the human mind, and the secrets of our origin. In order to better understand these mysteries, I've familiarized myself in the areas of programming, psychology, and philosophy.";
-            aboutBtn.style.display='none';
+        function textRevealClick(button) {
+            switch(event.srcElement.id){
+
+            case 'cmuButton':
+            {
+                document.getElementById("cmuReveal").innerHTML = "Bachelor of Science in Psychology, GPA: 3.01";
+                button.style.display='none';
+                break;
+            }
+
+            case 'emuButton':
+            {
+                document.getElementById("emuReveal").innerHTML = "Bachelor of Arts in Computer Science, GPA: 3.40";
+                button.style.display='none';
+                break;
+            }
+
+            case 'walshButton':
+            {
+                document.getElementById("walshReveal").innerHTML = "Master of Science in Management, GPA: 3.70";
+                button.style.display = 'none';
+                break;
+            }
+            }
+            //alert(event.srcElement.id);
         }
             </script>
 </head>
@@ -50,22 +72,22 @@
     <script src="app.js"></script>
     <h1>
     <div class = "button-container-div">
-        <p id="textReveal"></p>
-        <button id="aboutBtn" class = "button1" role="button1" onclick="textRevealClick(aboutBtn)"></button>
+        <p id="cmuReveal"></p>
+        <button id="cmuButton" class = "button1" role="button1" onclick="textRevealClick(cmuButton)"></button>
     </div> 
     </h1>
 
     <h1>
         <div class = "button-container-div">
-            <p id="textReveal"></p>
-            <button id="aboutBtn" class = "button2" role="button2" onclick="textRevealClick(aboutBtn)"></button>
+            <p id="emuReveal"></p>
+            <button id="emuButton" class = "button2" role="button2" onclick="textRevealClick(emuButton)"></button>
         </div> 
     </h1>
 
     <h1>
         <div class = "button-container-div">
-            <p id="textReveal"></p>
-            <button id="aboutBtn" class = "button3" role="button3" onclick="textRevealClick(aboutBtn)"></button>
+            <p id="walshReveal"></p>
+            <button id="walshButton" class = "button3" role="button3" onclick="textRevealClick(walshButton)"></button>
         </div> 
     </h1>
     <!--
