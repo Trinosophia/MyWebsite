@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Trinosophia.com</title>
+    <script>
+        function textRevealClick(button) {
+                document.getElementById("trinReveal").innerHTML = "<q>It is better to trust in the Lord than to sit among the mighty</q> - Count St. Germain";
+                button.style.display='none';
+            }
+    </script>
 </head>
 
 <body>
@@ -22,16 +28,16 @@
                 <a class = "current" href="index.html">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="about.html">About</a>
             </li>
             <li>
                 <a href="education.html">Education</a>
             </li>
             <li>
-                <a href="#">Interests</a>
+                <a href="interests.html">Interests</a>
             </li>
             <li>
-                <a href="#">Links</a>
+                <a href="links.html">Links</a>
             </li>
         </ul>
         <div class="burger">
@@ -41,6 +47,15 @@
         </div>
     </nav>
     <script src="app.js"></script>
+    <h1 >What is Trinosophia?</h1>
+    <h2>Sophia = wisdom. Trino = three. Trinosophia is the threefold wisdom of the universe. 
+        The truth of the triplicity. It is the truth within the truth. It is the interconnectedness of all things. 
+        To fully understand one thing is to fully understand all things.</h2>
+    <div class = "button-container-div">
+        <p id="trinReveal" style="font-size:26px;font-family:'Ubuntu', sans-serif;"></p>
+        <button id="trinButton" class = "button4" role="button4" onclick="textRevealClick(trinButton)">Trinosophia</button>
+    </div> 
+ 
 </body>
 
 </html>
