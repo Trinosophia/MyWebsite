@@ -9,8 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About</title>
+
+    <script>
+        function textRevealClick(button) {
+            switch (event.srcElement.id) {
+
+                case 'cmuButton':
+                    {
+                        document.getElementById("cmuReveal").innerHTML = "Bachelor of Science in Psychology, GPA: 3.01";
+                        button.style.display = 'none';
+                        break;
+                    }
+
+                case 'emuButton':
+                    {
+                        document.getElementById("emuReveal").innerHTML = "Bachelor of Arts in Computer Science, GPA: 3.40";
+                        button.style.display = 'none';
+                        break;
+                    }
+
+                case 'walshButton':
+                    {
+                        document.getElementById("walshReveal").innerHTML = "Master of Science in Management, GPA: 3.70";
+                        button.style.display = 'none';
+                        break;
+                    }
+            }
+        }
+    </script>
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -24,13 +54,13 @@
                 <a class="current" href="about.html">About</a>
             </li>
             <li>
-                <a href="education.html">Education</a>
+                <a href="psychology.html">Psychology</a>
             </li>
             <li>
-                <a href="interests.html">Interests</a>
+                <a href="philosophy.html">Philosophy</a>
             </li>
             <li>
-                <a href="links.html">Links</a>
+                <a href="programming.html">Programming</a>
             </li>
         </ul>
         <div class="burger">
@@ -39,27 +69,45 @@
             <div class="line3"></div>
         </div>
     </nav>
-    </div> 
+    </div>
     <div class="img-headshot" style="float: left"></div>
-    <h3>Hello, my name is Vincent Iaconis and welcome to Trinosophia.com! I'm a bit of an eclectic so you will likely see a variety of content on this website. I have a background
-        in many different areas including: psychology, philosophy, business, cryptocurrency, spirituality, comparative religion, and (of course) computer programming. All of
-    these different domains of thought have shaped the way I view the world and I wish to share that with you. </h3>
+    <h3 style="font-size: 20px; font-weight:100">Hello, my name is Vincent Iaconis and welcome to Trinosophia.com! I'm a bit of an eclectic so you will likely
+        see a variety of content on this website. I have a background
+        in many different areas including: psychology, philosophy, business, cryptocurrency, spirituality, comparative
+        religion, and (of course) computer programming. All of
+        these different domains of thought have shaped the way I view the world and I wish to share that with you. </h3>
+    <h2>Education</h2>
+    <div class="container">
+        <div class="leftpane">
+            <p id="cmuReveal" style="font-size:18px; font-weight: bold"></p>
+            <button id="cmuButton" class="button1" role="button1" onclick="textRevealClick(cmuButton)"></button>
+        </div>
+        <div class="middlepane">
+            <p id="emuReveal" style="font-size:18px; font-weight: bold"></p>
+            <button id="emuButton" class="button2" role="button2" onclick="textRevealClick(emuButton)"></button>
+        </div>
+        <div class="rightpane">
+            <p id="walshReveal" style="font-size:18px; font-weight: bold"></p>
+            <button id="walshButton" class="button3" role="button3" onclick="textRevealClick(walshButton)"></button>
+        </div>
+    </div>
     <div class="footer-container">
         <div class="footer">
-        <div class="footer-heading">
-            <div id="menu">
-            <h2>Social Media</h2>
-            <ul>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">TikTok</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            </ul>
+            <div class="footer-heading">
+                <div id="menu">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li><a href="https://github.com/Trinosophia" class="fa fa-github fa-3x"></a></li>
+                        <li><a href="https://www.linkedin.com/in/vincent-iaconis-56807612b/"
+                                class="fa fa-linkedin fa-3x"></a></li>
+                        <li><a href="https://www.instagram.com/vincent_sathariel/" class="fa fa-instagram fa-3x"></a>
+                        </li>
+                        <li><a href="https://twitter.com/VinceIaconis" class="fa fa-twitter fa-3x"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
+    </div>
 </body>
 
 </html>

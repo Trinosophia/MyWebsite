@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -9,63 +9,99 @@ html {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     overflow-x: hidden;
 }
 
-/* div {
-    margin:0;
-    padding:0;
-    } */
-
 h1 {
     margin-top: 20px;
-    padding: 30px; 
+    padding: 30px;
     text-align: center;
-    background: transparent; 
+    background: transparent;
 }
 
 h2 {
     margin-top: 10px;
     margin-bottom: 20px;
-    padding: 5px 100px 10px 100px; 
+    padding: 5px 100px 10px 100px;
     text-align: center;
-    background: transparent; 
+    background: transparent;
 }
 
 h3 {
     margin-top: 120px;
     margin-right: 200px;
-    background-color:rgb(255, 255, 255);  
-    background: transparent; 
+    margin-bottom: 125px;
+    background-color: rgb(255, 255, 255);
+    background: transparent;
 }
 
-body{
+body {
     width: 100%;
     padding: 0;
     margin: 0;
     background-image: rgb(255, 255, 255);
     background-attachment: fixed;
+font-family: 'Ubuntu', sans-serif !important;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-image: linear-gradient(to right, rgb(74, 218, 175) , rgb(158, 80, 221));
+    background-image: linear-gradient(to right, rgb(74, 218, 175), rgb(158, 80, 221));
 }
 
 /* #content{
     min-height: 50vh;
 } */
 
-#menu ul{
+#menu ul {
     list-style: none;
     text-align: center;
-}#menu li{
+}
+
+#menu li {
     display: inline;
     margin: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.leftpane {
+    width: 33.33%;
+    height: 100%;
+    margin-bottom: 50px;
+    float: left;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.middlepane {
+    width: 33.33%;
+    height: 100%;
+    margin-bottom: 50px;
+    float: left;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.rightpane {
+    width: 33.33%;
+    height: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    float: right;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.content{
+    margin: 10px 150px 10px 150px;
 }
 
 .button-container-div {
@@ -76,7 +112,7 @@ nav{
     align-items: center;
 }
 
-.button-container-div2{
+.button-container-div2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -87,57 +123,57 @@ nav{
 }
 
 .button1 {
-  appearance: none;
-  width: 20%;
-  height: 50px;
-  opacity: 1;
-  border-radius: 40em;
-  border: none;
-  box-shadow: #683d3d 0 -6px 8px inset;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: -.24px;
-  margin-left: 5%;
-  margin-right: 10%;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  background: url(../images/cmu-logo.png);
-  background-size: 95% 95%;
-  background-color: white;
-  background-repeat: no-repeat;
+    appearance: none;
+    width: 60%;
+    height: 60px;
+    opacity: 1;
+    border-radius: 40em;
+    border: none;
+    box-shadow: #000000 0 -6px 8px inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: -.24px;
+    margin-left: 0;
+    margin-right: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background: url(../images/cmu-logo.png);
+    background-size: 95% 95%;
+    background-color: white;
+    background-repeat: no-repeat;
 }
 
 .button1:hover {
-  background-color: rgb(255, 200, 46);
-  box-shadow: #683d3d 0 -6px 8px inset;
-  transform: scale(1.125);
+    background-color: rgb(255, 200, 46);
+    box-shadow: rgb(255, 200, 46) 0 -6px 8px inset;
+    transform: scale(1.125);
 }
 
 .button1:active {
-  transform: scale(1.025);
+    transform: scale(1.025);
 }
 
 @media (min-width: 768px) {
-  .button1 {
-    font-size: 1.5rem;
-    padding: .75rem 2rem;
-  }
+    .button1 {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+    }
 }
 
 .button2 {
     appearance: none;
-    width: 20%;
-    height: 50px;
+    width: 60%;
+    height: 60px;
     opacity: 1;
     border-radius: 40em;
     border: none;
@@ -149,7 +185,7 @@ nav{
     font-weight: bold;
     letter-spacing: -.24px;
     margin-left: 0;
-    margin-right: 10%;
+    margin-right: 0;
     outline: none;
     padding: 1rem 1.3rem;
     quotes: auto;
@@ -159,37 +195,37 @@ nav{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    background: url(../images/emu-logo.png);
-    background-size: 98% 99%;
+    background: url(../images/emu-logo2.png);
+    background-size: 95% 99%;
     background-color: white;
     background-repeat: no-repeat;
-  }
-  
-  .button2:hover {
-    background-color: #046A38;
+}
+
+.button2:hover {
+    background-color: #000000;
     box-shadow: #000000 0 -6px 8px inset;
     transform: scale(1.125);
-  }
-  
-  .button2:active {
+}
+
+.button2:active {
     transform: scale(1.025);
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .button2 {
-      font-size: 1.5rem;
-      padding: .75rem 2rem;
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
     }
-  }
+}
 
-  .button3 {
+.button3 {
     appearance: none;
-    width: 20%;
-    height: 50px;
+    width: 60%;
+    height: 60px;
     opacity: 1;
     border-radius: 40em;
     border: none;
-    box-shadow: #010c74 0 -6px 8px inset;
+    box-shadow: rgb(0, 0, 0) 0 -6px 8px inset;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
@@ -197,7 +233,7 @@ nav{
     font-weight: bold;
     letter-spacing: -.24px;
     margin-left: 0;
-    margin-right: 5%;
+    margin-right: 0;
     outline: none;
     padding: 1rem 1.3rem;
     quotes: auto;
@@ -207,23 +243,24 @@ nav{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    background: url(../images/walsh-logo.png);
-    background-size: 100% 100%;
+    background: url(../images/walsh-logo3.png);
+    background-size: 80% 100%;
+    background-position: center;
     background-color: white;
     background-repeat: no-repeat;
-  }
-  
-  .button3:hover {
-    background-color: rgb(208, 216, 224);
-    box-shadow: #010c74 0 -6px 8px inset;
-    transform: scale(1.125);
-  }
-  
-  .button3:active {
-    transform: scale(1.025);
-  }
+}
 
-  .button4 {
+.button3:hover {
+    background-color: rgb(255, 200, 46);
+    box-shadow: rgb(255, 200, 46) 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.button3:active {
+    transform: scale(1.025);
+}
+
+.button4 {
     appearance: none;
     width: 10%;
     height: 55px;
@@ -252,36 +289,38 @@ nav{
     background-size: contain;
     background-color: rgb(158, 80, 221);
     background-repeat: no-repeat;
-  }
-  
-  .button4:hover {
-    color: rgb(255, 196, 0) ;
+}
+
+.button4:hover {
+    color: rgb(255, 196, 0);
     background-color: rgb(0, 0, 0);
     transform: scale(1.125);
-  }
-  
-  .button4:active {
-    transform: scale(1.025);
-  }
+}
 
-.logo{
-    color:rgb(0, 0, 0);
+.button4:active {
+    transform: scale(1.025);
+}
+
+.logo {
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
-    letter-spacing: 5px; /* spacing between each individual letter */
+    letter-spacing: 5px;
+    /* spacing between each individual letter */
     font-size: 20px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     justify-content: space-around;
     width: 45%;
 }
 
-.nav-links li{
-    list-style: none; /* Gets rid of bulletpoints */
+.nav-links li {
+    list-style: none;
+    /* Gets rid of bulletpoints */
 }
 
-.nav-links a{
+.nav-links a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     letter-spacing: 3px;
@@ -289,35 +328,36 @@ nav{
     font-size: 16px;
 }
 
-.burger{
+.burger {
     display: none;
     cursor: pointer;
 }
 
-.burger div{
+.burger div {
     width: 25px;
     height: 3px;
-    background-color:rgb(57, 235, 205);
+    background-color: rgb(57, 235, 205);
     margin: 5px;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px){
-    .nav-links{
+@media screen and (max-width:1024px) {
+    .nav-links {
         width: 60%;
     }
 }
 
-@media screen and (max-width:768px){
-    body{
+@media screen and (max-width:768px) {
+    body {
         overflow: hidden;
     }
-    .nav-links{
+
+    .nav-links {
         position: absolute;
         right: 0px;
         height: 88vh;
         top: 8vh;
-        background-color:rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -325,46 +365,51 @@ nav{
         transform: translate(100%);
         transition: transform 0.5s ease-in;
     }
-    .nav-links li{
+
+    .nav-links li {
         opacity: 1;
     }
-    .burger{
+
+    .burger {
         display: block;
     }
 
 }
 
-.nav-active{
+.nav-active {
     transform: translateX(0%);
 }
 
-.nav-links .current{
-color: rgb(255, 255, 255); 
+.nav-links .current {
+    color: rgb(255, 255, 255);
 }
 
-.nav-links a:hover{ 
-color: rgb(255, 196, 0) !important; 
+.nav-links a:hover {
+    color: rgb(255, 196, 0) !important;
 }
 
-@keyframes navLinkFade{
-    from{
+@keyframes navLinkFade {
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+
+.toggle .line2 {
     opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .img-emu {
@@ -382,45 +427,45 @@ color: rgb(255, 196, 0) !important;
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 .img-walsh {
-        width: 1200px;
-        height: 200px;
-        background-image: url(../images/walsh-logo2.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
+    width: 1200px;
+    height: 200px;
+    background-image: url(../images/walsh-logo2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-.img-headshot{
-        margin: 40px 70px 30px 140px;
-        width: 200px;
-        height: 300px;
-        background-color:rgb(103, 99, 107);
-        background-image: url(../images/headshot.jpg);
-        border-radius: 20px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 15px solid transparent;
-        border-image: linear-gradient(to bottom right, #330361 0%, #7a1ec5 25%, #3a2fd6 50%, #37fe8a 75%, #18e2fd 100%);
-        border-image-slice: 5;
-        
+.img-headshot {
+    margin: 40px 70px 30px 140px;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(103, 99, 107);
+    background-image: url(../images/headshot.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 15px solid transparent;
+    border-image: linear-gradient(to bottom right, #330361 0%, #7a1ec5 25%, #3a2fd6 50%, #37fe8a 75%, rgb(74, 218, 175) 100%);
+    border-image-slice: 5;
 }
 
-.rounded-edges{
+.rounded-edges {
     border-radius: 30px;
 }
 
-.footer-container{
+.footer-container {
     background-color: rgb(0, 0, 0);
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 2rem 0 2rem 0;
     width: 100%;
-    display: flex; 
-    min-height: 40vh;  
+    display: flex;
+    min-height: 40vh;
     position: relative;
     /* margin-left: 35px; */
-}  
+}
 
-.footer{
+.footer {
     background-color: black;
     color: rgb(255, 196, 0);
     display: flex;
@@ -432,23 +477,23 @@ color: rgb(255, 196, 0) !important;
     box-sizing: border-box;
 }
 
-.footer-heading{
+.footer-heading {
     display: flex;
     flex-direction: column;
     /* margin-right: 4rem; */
 }
 
-.footer-heading h2{
+.footer-heading h2 {
     margin-bottom: 2rem;
 }
 
-.footer-heading a{
+.footer-heading a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
 
-.footer-heading a:hover{
+.footer-heading a:hover {
     color: rgb(255, 196, 0);
     transition: 0.3s case-out;
 }
